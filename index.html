@@ -1,0 +1,210 @@
+<!doctype html>
+
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en"> 
+
+<head> 
+  <meta charset="utf-8">
+  <title>HOME | JQUERY</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/vendor/slick-1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+</head>
+
+<body>
+  <!--container start-->
+  <div class="container">
+    <!--main section start-->
+    <main>
+      <!--lightbox section start-->
+      <section class="lightbox">
+        <div class="wrapper">
+          <h1>lightbox</h1>
+          <ul class="gallery">
+            <li>
+              <figure>
+                <img src="assets/images/wind.jpg" alt="Wind">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/clear.jpeg" alt="Clear">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/cloudy.jpeg" alt="Cloudy">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/rain.jpeg" alt="Rain">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/smoke.jpeg" alt="Smoke">
+            </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/sunny.jpeg" alt="Sunny">
+              </figure>
+            </li>
+          </ul>
+          <div class="lightbox-opened">
+            <img src="assets/images/sunny.jpeg" alt="Random Image">
+            <span class="cancel">cancel</span>
+          </div>
+        </div>
+      </section>
+      <!--lightbox section end-->
+
+      <!--tab section start-->
+      <section class="tab">
+        <div class="wrapper">
+          <h1>tabs</h1>
+          <ul class="tabs">
+            <li class="link active" data="tab1">tab1</li>
+            <li class="link" data="tab2">tab2</li>
+            <li class="link" data="tab3">tab3</li>
+          </ul>
+          <div id="tab1" class="content active">
+            <figure>
+              <img src="assets/images/wind.jpg" alt="Wind">
+            </figure>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo omnis 
+              quidem a aperiam labore dolorum facere, blanditiis quidem a aperiam labore dolorum facere, blanditiis
+              dolores ducimus natus consectetur sequi velit quas impedit possimus enim sit aliquam laboriosam.
+            </p>
+          </div>
+          <div id="tab2" class="content">
+            <figure>
+              <img src="assets/images/cloudy.jpeg" alt="Cloudy">
+            </figure>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo omnis 
+              quidem a aperiam labore dolorum facere, blanditiis
+              dolores ducimus natus consectetur sequi velit quas impedit possimus enim sit aliquam laboriosam.
+            </p>
+          </div>
+          <div id="tab3" class="content">
+            <figure>
+              <img src="assets/images/clear.jpeg" alt="Clear">
+            </figure>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo omnis quidem a aperiam labore dolorum facere, blanditiis
+              quidem a aperiam labore dolorum facere, blanditiis quidem a aperiam labore dolorum facere, blanditiis
+              dolores ducimus natus consectetur sequi velit quas impedit possimus enim sit aliquam laboriosam.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--tab section end-->
+       <!--filter section end-->
+      <section class="filter">
+        <div class="wrapper">
+          <h1>filter</h1>
+          <ul class="filters">
+            <li class="tab-active" number="filter-content">all</li>
+            <li number="even">even list</li>
+            <li number="odd">odd list</li>
+          </ul>
+          <ul class="tab-content">
+            <li class="odd filter-content">one</li>
+            <li class="even filter-content">two</li>
+            <li class="odd filter-content">three</li>
+            <li class="even filter-content">four</li>
+            <li class="odd filter-content">five</li>
+            <li class="even filter-content">six</li>
+            <li class="odd filter-content">seven</li>
+            <li class="even filter-content">eight</li>
+            <li class="odd filter-content">nine</li>
+            <li class="even filter-content">ten</li>
+          </ul>
+        </div>
+      </section>
+      <!--filter section end-->
+      <!--carousal section end-->
+      <section class="carousel">
+        <div class="wrapper">
+          <h1>carousal</h1>
+          <ul class="carousal-content">
+            <li class="box">slide 1</li>
+            <li class="box">slide 2</li>
+            <li class="box">slide 3</li>
+            <li class="box">slide 4</li>
+            <li class="box">slide 5</li>
+            <li class="box">slide 6</li>
+            <li class="box">slide 7</li>
+            <li class="box">slide 8</li>
+            <li class="box">slide 9</li>
+          </ul>
+        </div>
+      </section>
+      <!--carousal section end-->
+      <!--slider section start-->
+      <section class="slider">
+        <div class="wrapper">
+          <ul class="banner">
+            <!-- slide one starts -->
+            <li class="slides slide-one active">
+              <figure>
+                <img src="https://via.placeholder.com/900x300?text=slide+one" alt="Slider Image">
+              </figure>
+            </li>
+            <!-- slide one ends -->
+            <!-- slide two starts -->
+            <li class="slides slide-two disable">
+              <figure>
+                <img src="https://via.placeholder.com/900x300?text=slide+two" alt="Slider Image">
+              </figure>
+            </li>
+            <!-- slide two ends -->
+            <!-- slide three starts -->
+            <li class="slides slide-three disable">
+              <figure>
+                <img src="https://via.placeholder.com/900x300?text=slide+three" alt="Slider Image">
+              </figure>
+            </li>
+            <!-- slide three ends -->
+            <!-- slide four starts -->
+            <li class="slides slide-four disable">
+              <figure>
+                <img src="https://via.placeholder.com/900x300?text=slide+four" alt="Slider Image">
+              </figure>
+            </li>
+            <!-- slide four ends -->
+          </ul>
+          <!-- arrows starts -->
+          <a href="#FIXME" title="Previous" class="arrow left-arrow">left arrow</a>
+          <a href="#FIXME" title="Next" class="arrow right-arrow">right arrow</a>
+          <!-- arrows ends -->
+          <!-- <ul class="dots">
+            <li><a href="#FIXME" title="Slide One" class="dot active">dot</a></li>
+            <li><a href="#FIXME" title="Slide Two" class="dot">dot</a></li>
+            <li><a href="#FIXME" title="Slide Three" class="dot">dot</a></li>
+            <li><a href="#FIXME" title="Slide Four" class="dot">dot</a></li>
+          </ul> -->
+        </div>
+      </section>
+      <!--slider section end-->
+    </main>
+    <!--main section end-->
+  </div>
+  <!--container end-->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/vendor/slick-1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
